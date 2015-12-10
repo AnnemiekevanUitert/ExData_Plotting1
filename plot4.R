@@ -1,6 +1,6 @@
 # Store the needed data into hhSubData
 householdData <- "household_power_consumption.txt"
-#hhData <- read.table(householdData, header=TRUE, sep=";", stringsAsFactors=FALSE, dec=".")
+hhData <- read.table(householdData, header=TRUE, sep=";", stringsAsFactors=FALSE, dec=".")
 hhSubData <- subset(hhData,Date == '1/2/2007' | Date == '2/2/2007')
 
 # Create a formatted data time variable to use in the plot
